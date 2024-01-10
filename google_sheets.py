@@ -2,8 +2,7 @@ import gspread
 from database_functions.get_info import get_event_info_list
 
 google_client = gspread.service_account('config_info/eventsmanager-385008-fbee8488f0a6.json')
-sheets = google_client.open_by_key('1Co-Rv7WeCT_RYQM7U14PRBb8EQBhLed1sSXD84OPBrE')
-# sheets = google_client.open_by_key('1Hw4eFJYtxrwfQ3FZ3ixs2vDlfQ0h0Fv7V06ro8qwrqY')
+sheets = google_client.open_by_key('')
 worksheet = sheets.worksheet(title="Архив мероприятий")
 
 def add_event_to_archive_sheet(event_id):
